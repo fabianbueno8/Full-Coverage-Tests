@@ -5,31 +5,54 @@ This project contains a `PrivateBank` contract along with full coverage tests us
 
 ## Prerequisites
 
-- Foundry (Install with instructions at: https://book.getfoundry.sh/)
-- Git
-- A local Ethereum node or Anvil (comes with Foundry)
+Before running the project, ensure you have the following installed on your machine:
 
-## Running the Tests
+- **Foundry**: A Solidity development toolkit. Install it by following the instructions in the official [Foundry Book](https://book.getfoundry.sh/).
+- **Git**: For cloning the repository.
+- **An Ethereum local node** or **Anvil**: Anvil is a local Ethereum node simulator that comes with Foundry.
 
-1. Clone the repository:
+## Instructions for Running the Project
 
-```
-git clone <repo-link>
-```
+1. **Clone the repository:**
 
-2. Install Foundry dependencies:
+    ```bash
+    git clone <repo-link>
+    cd PrivateBankContract
+    ```
 
-```
-forge install
-```
+2. **Install dependencies:**
 
-3. Run the tests:
+    If your project has additional dependencies, run:
 
-```
-forge test
-```
+    ```bash
+    forge install
+    ```
+
+3. **Compile the contracts:**
+
+    ```bash
+    forge build
+    ```
+
+4. **Run the tests:**
+
+    To execute all tests, use the following command:
+
+    ```bash
+    forge test
+    ```
+
+    This will run all the test cases and provide you with coverage and result reports.
+
+5. **Check code coverage (Optional):**
+
+    To see the test coverage, run:
+
+    ```bash
+    forge coverage
+    ```
 
 ## Project Structure
 
-- `src/PrivateBank.sol`: The PrivateBank contract.
-- `test/PrivateBankTest.t.sol`: Tests for the PrivateBank contract.
+- **src/PrivateBank.sol**: Contains the `PrivateBank` Solidity contract.
+- **test/PrivateBankTest.t.sol**: Contains the test cases for the contract using Foundry's test framework.
